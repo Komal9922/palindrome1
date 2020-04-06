@@ -1,4 +1,4 @@
-number = int(input("enter the no");
+number = 565;
 string = str(number);
 rev_string = string [::-1];
 print("revesrd number",rev_string);
