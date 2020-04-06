@@ -1,0 +1,18 @@
+#set the build language to python
+language:python
+
+#set the python version to 2.7
+python:2.7
+
+#install the codecov pip dependancy
+install:
+- pip install codecov
+
+#run the unit test 
+script:
+ - coverage run palindrome.py
+ 
+ #push the results back to codecov
+ after_sucess:
+  - codecov
+  
